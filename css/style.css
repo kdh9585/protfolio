@@ -66,9 +66,6 @@ body {
 }
 
 .header .container {
-    position: relative;
-    display: block;
-    width: 100%;
     height: 100%;
 }
 
@@ -80,13 +77,17 @@ body {
     display: block;
 
 }
+.logo img{
+    width: 150px;
+    height: 150px;
+}
 .visual{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     display: block;
     width: 800px;
-    height: 700px;
+    height: 750px;
     background: url('../images/KakaoTalk_20210529_111356604.jpg') no-repeat center;
     background-size: cover;
     
@@ -116,7 +117,7 @@ body {
 .gnb>li>a {
     position: relative;
     display: block;
-    margin: 40px;
+    margin: 20px;
     font-size: 20px;
     text-transform: capitalize;
     
@@ -181,6 +182,7 @@ body {
 
 .burger-check:checked~.menu {
     max-width: 200px;
+    height: 600px;
 }
 
 .burger-check:checked~.burger-icon .burger-sticks {
@@ -203,6 +205,7 @@ body {
 .main{
     position: relative;
     display: block;
+    
 }
 /* home */
 .home{
@@ -255,4 +258,60 @@ body {
     display: block;
     width: 35px;
     height: 35px;
+}
+/* main */
+.main{
+    position: relative;
+    display: block;
+}
+/* about */
+.about{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.about .container{
+    position: relative;
+    display: block;
+    margin-top: 70px;
+    height: 700px;
+}
+.about-box{
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+}
+.about-box> h2{
+    position: relative;
+    left: 40%;
+    display: block;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.about-box> h2::after{
+    content: '';
+    position: absolute;
+    top: 64px;
+    left: 74px;
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+}
+.about-images{
+    position: relative;
+    top: 200px;
+    left: 214px;
+    display: block;
+    width: 300px;
+    height: 450px;
+    background: url("../images/about\ \(2\).jpg") no-repeat center;
+    background-size: cover;
+}
+.about .container >span{
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    font-size: 20px;
 }
