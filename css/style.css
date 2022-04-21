@@ -300,18 +300,43 @@ body {
     background-color: #000;
 }
 .about-images{
-    position: relative;
+    position: absolute;
     top: 200px;
-    left: 214px;
+    left: 50px;
     display: block;
     width: 300px;
-    height: 450px;
+    height: 350px;
     background: url("../images/about\ \(2\).jpg") no-repeat center;
     background-size: cover;
+    border-radius: 15px;
 }
 .about .container >span{
     position: absolute;
-    top: 200px;
-    left: 800px;
+    top: 240px;
+    right: 150px;
     font-size: 20px;
+    line-height: 45px;
+}
+.about-button{
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    display: block;
+    width: 70px;
+    height: 30px;
+    border: #000;
+    border-radius: 4px;
+}
+/* skill */
+.skill{
+    position: relative;
+    display: block;
+    width:100%
+}
+
+.skill .container{
+    position: relative;
+    display: block;
+    margin-top: 70px;
+    height: 700px;
 }
