@@ -14,4 +14,90 @@ window.onload = function () {
     setInterval(typing, 200)
 
     
+
+
 };
+// progress Bar
+$(document).ready(function(){
+    let bar1 = new ProgressBar.Circle(circle1, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#e44d26',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar2 = new ProgressBar.Circle(circle2, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#1f62ae',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar3 = new ProgressBar.Circle(circle3, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#f0db4f',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar4 = new ProgressBar.Circle(circle4, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#e44d26',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar5 = new ProgressBar.Circle(circle5, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#e44d26',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar6 = new ProgressBar.Circle(circle6, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#e44d26',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar7 = new ProgressBar.Circle(circle7, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#e44d26',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar8 = new ProgressBar.Circle(circle8, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#e44d26',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    bar1.animate(.9); // Number from 0.0 to 1.0
+    bar2.animate(.9); // Number from 0.0 to 1.0
+    bar3.animate(.9); // Number from 0.0 to 1.0
+    bar4.animate(.9); // Number from 0.0 to 1.0
+    bar5.animate(.9); // Number from 0.0 to 1.0
+    bar6.animate(.9); // Number from 0.0 to 1.0
+    bar7.animate(.9); // Number from 0.0 to 1.0
+    bar8.animate(.9); // Number from 0.0 to 1.0
+});
