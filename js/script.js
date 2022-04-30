@@ -50,7 +50,7 @@ $(document).ready(function(){
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#e44d26',
+        color: '#0769ad',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -59,7 +59,7 @@ $(document).ready(function(){
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#e44d26',
+        color: '#41b883',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -68,7 +68,7 @@ $(document).ready(function(){
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#e44d26',
+        color: '#000000',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -77,7 +77,7 @@ $(document).ready(function(){
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#e44d26',
+        color: '#ac50c3',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -86,7 +86,7 @@ $(document).ready(function(){
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#e44d26',
+        color: '#4fc7ec',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -100,4 +100,14 @@ $(document).ready(function(){
     bar6.animate(.9); // Number from 0.0 to 1.0
     bar7.animate(.9); // Number from 0.0 to 1.0
     bar8.animate(.9); // Number from 0.0 to 1.0
+
+    // // swiper
+    // let swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 3,
+    //     spaceBetween: 30,
+    //     pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //     },
+    // });
 });

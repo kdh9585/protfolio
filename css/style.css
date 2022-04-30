@@ -149,6 +149,7 @@ body {
 /* 햄버거 메뉴 */
 .menu {
     position: absolute;
+    display: none;
     top: 50%;
     right: 0px;
     height: 100%;
@@ -440,16 +441,7 @@ body {
     margin-top: 150px;
     
 }
-.life .section-box>h2::after {
-    content: '';
-    position: relative;
-    margin-top: 10px;
-    left: 930px;
-    display: block;
-    width: 50px;
-    height: 5px;
-    background-color: #000;
-}
+
 
 .polaroid {
     background: #fff;
@@ -468,6 +460,8 @@ body {
     display: inline-block;
     margin-top: 2rem;
     filter: grayscale(100%);
+    width: 24%;
+    height: auto;
 }
 
 .item .polaroid:before {
@@ -551,3 +545,47 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
     transition: all 0.35s;
 }
+/* portfolio */
+.portfolio{
+    position: relative;
+    display: block;
+}
+.portfolio .container{
+    position: relative;
+    display: block;
+}
+
+.pt-box{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+
+}
+
+.pt-top{
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 250px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.pt-top img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pt-cate{
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 200px;
+    
+}
+
