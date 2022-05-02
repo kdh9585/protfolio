@@ -93,21 +93,21 @@ $(document).ready(function(){
     });
 
     bar1.animate(.9); // Number from 0.0 to 1.0
-    bar2.animate(.9); // Number from 0.0 to 1.0
-    bar3.animate(.9); // Number from 0.0 to 1.0
-    bar4.animate(.9); // Number from 0.0 to 1.0
-    bar5.animate(.9); // Number from 0.0 to 1.0
-    bar6.animate(.9); // Number from 0.0 to 1.0
-    bar7.animate(.9); // Number from 0.0 to 1.0
+    bar2.animate(.85); // Number from 0.0 to 1.0
+    bar3.animate(.8); // Number from 0.0 to 1.0
+    bar4.animate(.7); // Number from 0.0 to 1.0
+    bar5.animate(.6); // Number from 0.0 to 1.0
+    bar6.animate(.6); // Number from 0.0 to 1.0
+    bar7.animate(.5); // Number from 0.0 to 1.0
     bar8.animate(.9); // Number from 0.0 to 1.0
 
-    // // swiper
-    // let swiper = new Swiper(".mySwiper", {
-    //     slidesPerView: 3,
-    //     spaceBetween: 30,
-    //     pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    //     },
-    // });
+    // swiper
+
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+    });
 });
