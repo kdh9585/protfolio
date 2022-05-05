@@ -110,4 +110,15 @@ $(document).ready(function(){
         clickable: true,
         },
     });
+
+    let gnb_a = $('.gnb a');
+    
+
+    $(gnb_a).click(function(event){
+        event.preventDefault();
+        $('html, body').animate({
+            scroolTop: $(this.hash).stop().offset().top -100
+        },1000);
+        console.log(gnb_a);
+    })
 });

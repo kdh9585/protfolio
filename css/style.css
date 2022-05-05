@@ -1,6 +1,7 @@
 @charset 'utf-8';
 @import url('../css/Montserrat.css');
 @import url('../css/notosanskr/NotoSansKR.css');
+@import url('../css/Nanum.css');
 
 * {
     margin: 0;
@@ -140,7 +141,7 @@ body {
 .gnb>li>a {
     position: relative;
     display: block;
-    margin: 20px;
+    margin: 17px;
     font-size: 20px;
     text-transform: capitalize;
 
@@ -239,6 +240,7 @@ body {
     position: relative;
     display: block;
     height: 650px;
+    margin-bottom: 80px;
 
 }
 
@@ -302,29 +304,185 @@ body {
     display: block;
 }
 
+/* kang */
+.kang {
+    position: relative;
+    display: block;
+    background-color: #eee;
+}
+
+.kang .container {
+    height: 900px;
+
+}
+
+.kang-left {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 700px;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: #333;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    float: left;
+    margin-top: 80px;
+}
+
+.kang-dong {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 53px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.kang-dong>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.kang-icon {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+
+}
+
+.kang-icon>i {
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+.kang-cate {
+    position: relative;
+    display: block;
+}
+
+.kang-cate>span {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 60px;
+    font-family: 'Nanum Pen Script';
+}
+
+.kang-right {
+    position: relative;
+    display: block;
+    width: 850px;
+    float: right;
+    height: 100%;
+
+}
+
+.kang-title {
+    position: relative;
+    display: block;
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.kang-title ::after {
+    content: '';
+    position: absolute;
+    top: 55px;
+    left: 354px;
+    display: block;
+    width: 500px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.kang-title>span {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: #333;
+}
+
+.kang-txt {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 245px;
+    padding-top: 60px;
+}
+
+.kang-txt p {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.kang-txt span {
+    position: relative;
+    display: block;
+    float: right;
+    margin-right: 50px;
+}
+
+.kang-txt span:first-child {
+    margin-right: 0;
+}
+
+.kang-span {
+    position: relative;
+    display: block;
+}
+
+.kang-school {
+    position: relative;
+    display: block;
+    float: left;
+}
+.kang-h4{
+    position: relative;
+    display: block;
+    font-size: 20px;
+}
+.kang-h4::after{
+    content: '';
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #000;
+    
+}
+.kang-h5{
+    position: relative;
+    display: block;
+    padding-top: 10px;
+}
+
+.kang-job {
+    position: relative;
+    display: block;
+    float: right;
+}
+
 /* about */
 .about {
     position: relative;
     display: block;
     width: 100vw;
-    background: rgb(184,187,224);
-    background: linear-gradient(90deg, rgba(184,187,224,1) 0%, rgba(71,108,218,1) 100%);
-    -webkit-clip-path:polygon(0 0,100% 0,100% 80%,0 100%);
+    background: rgb(184, 187, 224);
+    background: linear-gradient(90deg, rgba(184, 187, 224, 1) 0%, rgba(71, 108, 218, 1) 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     margin-top: 200px;
 }
 
-/* .about::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: rotate(348deg);
-    display: block;
-    width: 100vw;
-    height: 600px;
-    background: rgb(255,195,160);
-    background: linear-gradient(90deg, rgba(255,195,160,1) 0%, rgba(255,175,189,1) 100%);
-} */
 
 .about .container {
     height: 700px;
@@ -333,27 +491,30 @@ body {
 .about-images {
     position: absolute;
     top: 200px;
-    left: 50px;
+    left: 40px;
     display: block;
     width: 300px;
-    height: 350px;
+    height: 300px;
     background: url("../images/about.jpg") no-repeat center;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: 50%;
 }
 
 .about .container>span {
     position: absolute;
-    top: 240px;
-    right: 150px;
+    display: block;
+    width: 600px;
+    height: 500px;
+    margin-top: 65px;
+    margin-left: 430px;
     font-size: 20px;
-    line-height: 45px;
+    line-height: 35px;
 }
 
 .about-button {
     position: absolute;
-    top: 480px;
-    left: 50%;
+    top: 435px;
+    left: 60%;
     display: block;
     width: 70px;
     height: 30px;
@@ -371,9 +532,10 @@ body {
 .skill .container {
     height: 750px
 }
-.skill-box{
+
+.skill-box {
     position: relative;
-    display:block;
+    display: block;
     margin-top: 40px;
 }
 
@@ -385,7 +547,7 @@ body {
 #circle5,
 #circle6,
 #circle7,
-#circle8{
+#circle8 {
     position: relative;
     display: block;
     width: 200px;
@@ -423,10 +585,12 @@ body {
     background: url('../images/php_icon.png') no-repeat center;
     background-size: 80px;
 }
+
 #circle7 {
     background: url('../images/bootstrap_icon.png') no-repeat center;
     background-size: 80px;
 }
+
 #circle8 {
     background: url('../images/potoshop_icon.png') no-repeat center;
     background-size: 80px;
@@ -440,7 +604,7 @@ body {
     width: 100%;
     background-color: #f6f6f6;
     margin-top: 150px;
-    
+
 }
 
 
@@ -456,7 +620,8 @@ body {
     text-align: center;
     line-height: 2em;
 }
-.item-wrap{
+
+.item-wrap {
     position: relative;
     display: block;
     width: 1200px;
@@ -469,7 +634,8 @@ body {
     width: 24%;
     height: auto;
 }
-.item img{
+
+.item img {
     width: 300px;
 }
 
@@ -557,18 +723,18 @@ body {
 
 
 /* portfolio */
-.portfolio{
+.portfolio {
     position: relative;
     display: block;
 }
 
-.portfolio .container{
+.portfolio .container {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
-.portfolio> h2{
+.portfolio>h2 {
     margin-bottom: 100px;
 }
 
@@ -577,17 +743,19 @@ body {
     display: block;
 }
 
-.pt-box{
+.pt-box {
     position: relative;
     display: block;
     width: 300px;
     height: 460px;
     border-radius: 10px;
-    background-color: #f6f6f6;
+    background-color: #eee;
+    box-shadow: #333;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
 }
 
-.pt-top{
+.pt-top {
     position: relative;
     display: block;
     width: 250px;
@@ -596,21 +764,21 @@ body {
     margin: auto;
 }
 
-.pt-top img{
+.pt-top img {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
 }
 
-.pt-cate{
+.pt-cate {
     position: relative;
     display: block;
     width: 300px;
     height: 200px;
 }
 
-.pt-work{
+.pt-work {
     position: relative;
     display: block;
     background-color: #333;
@@ -621,7 +789,7 @@ body {
     padding: 5px;
 }
 
-.pt-cate > h3{
+.pt-cate>h3 {
     position: relative;
     display: block;
     margin-top: 20px;
@@ -629,7 +797,7 @@ body {
     font-size: 20px;
 }
 
-.pt-cate > span{
+.pt-cate>span {
     position: relative;
     display: block;
     margin-top: 10px;
@@ -638,12 +806,12 @@ body {
     color: #222;
 }
 
-.pt-cate >a{
+.pt-cate>a {
     position: relative;
     display: block;
 }
 
-.pt-bottom{
+.pt-bottom {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -654,20 +822,16 @@ body {
     border-top: 1px dotted #000;
 }
 
-.pt-bottom > a{
+.pt-bottom>a {
     position: relative;
     flex-basis: 115px;
 }
 
-.pt-bottom > a >i{
+.pt-bottom>a>i {
     font-size: 15px;
     margin-right: 10px;
 }
 
-.pt-bottom >a:last-child{
+.pt-bottom>a:last-child {
     color: coral;
 }
-
-
-
-
