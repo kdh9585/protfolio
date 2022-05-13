@@ -50,7 +50,7 @@ $(document).ready(function(){
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: '#0769ad',
+        color: '#000',
         trailColor: '#eee',
         trailWidth: 1,
         svgStyle: null
@@ -96,9 +96,9 @@ $(document).ready(function(){
     bar2.animate(.85); // Number from 0.0 to 1.0
     bar3.animate(.8); // Number from 0.0 to 1.0
     bar4.animate(.7); // Number from 0.0 to 1.0
-    bar5.animate(.6); // Number from 0.0 to 1.0
+    bar5.animate(.5); // Number from 0.0 to 1.0
     bar6.animate(.6); // Number from 0.0 to 1.0
-    bar7.animate(.5); // Number from 0.0 to 1.0
+    bar7.animate(.6); // Number from 0.0 to 1.0
     bar8.animate(.9); // Number from 0.0 to 1.0
 
     // swiper

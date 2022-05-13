@@ -312,7 +312,7 @@ body {
 }
 
 .kang .container {
-    height: 800px;
+    height: 750px;
 
 }
 
@@ -326,7 +326,7 @@ body {
     box-shadow: #333;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     float: left;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .kang-dong {
@@ -414,6 +414,7 @@ body {
     width: 100%;
     height: 245px;
     padding-top: 60px;
+    font-size: 18px;
     float: left;
 }
 
@@ -449,7 +450,7 @@ body {
 .kang-h4{
     position: relative;
     display: block;
-    margin-right: 60px;
+    margin-right: 70px;
     float: left;
 }
 .kang-h4 >span{
@@ -464,7 +465,7 @@ body {
     position: relative;
     display: block;
     width: 70px;
-    height: 10px;
+    height:5px;
     margin-top: 10px;
     border-radius: 3px;
     background-color: #000;
@@ -476,6 +477,127 @@ body {
     padding-top: 30px;
 }
 
+
+/* portfolio */
+.portfolio {
+    position: relative;
+    display: block;
+    
+}
+
+.portfolio .container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 800px;
+}
+
+.portfolio>h2 {
+    margin-bottom: 50px;
+}
+
+.sw-port {
+    position: relative;
+    display: block;
+}
+
+.pt-box {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 460px;
+    border-radius: 10px;
+    background-color: #eee;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 10px;
+}
+
+.pt-top {
+    position: relative;
+    display: block;
+    width: 250px;
+    height: 250px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.pt-top img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.pt-cate {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 200px;
+}
+
+.pt-work {
+    position: relative;
+    display: block;
+    background-color: #333;
+    color: #eee;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 25px;
+    padding: 5px;
+}
+
+.pt-cate>h3 {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.pt-cate>span {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.pt-cate>a {
+    position: relative;
+    display: block;
+}
+
+.pt-bottom {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 30px;
+    border-top: 1px dotted #000;
+}
+
+.pt-bottom>a {
+    position: relative;
+    flex-basis: 115px;
+}
+
+.pt-bottom>a>i {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.pt-bottom>a:last-child {
+    color: coral;
+}
+.swiper-pagination{
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translateX(-50%);
+}
 
 
 /* about */
@@ -533,7 +655,12 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    
+    background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .skill .container {
@@ -611,7 +738,8 @@ body {
     width: 100%;
     background-color: #f6f6f6;
     margin-top: 150px;
-
+    padding-bottom: 100px;
+    
 }
 
 
@@ -728,117 +856,3 @@ body {
     transition: all 0.35s;
 }
 
-
-/* portfolio */
-.portfolio {
-    position: relative;
-    display: block;
-}
-
-.portfolio .container {
-    position: relative;
-    display: block;
-    overflow: hidden;
-}
-
-.portfolio>h2 {
-    margin-bottom: 100px;
-}
-
-.sw-port {
-    position: relative;
-    display: block;
-}
-
-.pt-box {
-    position: relative;
-    display: block;
-    width: 300px;
-    height: 460px;
-    border-radius: 10px;
-    background-color: #eee;
-    box-shadow: #333;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-}
-
-.pt-top {
-    position: relative;
-    display: block;
-    width: 250px;
-    height: 250px;
-    padding-top: 20px;
-    margin: auto;
-}
-
-.pt-top img {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.pt-cate {
-    position: relative;
-    display: block;
-    width: 300px;
-    height: 200px;
-}
-
-.pt-work {
-    position: relative;
-    display: block;
-    background-color: #333;
-    color: #eee;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-left: 25px;
-    padding: 5px;
-}
-
-.pt-cate>h3 {
-    position: relative;
-    display: block;
-    margin-top: 20px;
-    margin-left: 25px;
-    font-size: 20px;
-}
-
-.pt-cate>span {
-    position: relative;
-    display: block;
-    margin-top: 10px;
-    margin-left: 25px;
-    margin-bottom: 15px;
-    color: #222;
-}
-
-.pt-cate>a {
-    position: relative;
-    display: block;
-}
-
-.pt-bottom {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 5px 30px;
-    border-top: 1px dotted #000;
-}
-
-.pt-bottom>a {
-    position: relative;
-    flex-basis: 115px;
-}
-
-.pt-bottom>a>i {
-    font-size: 15px;
-    margin-right: 10px;
-}
-
-.pt-bottom>a:last-child {
-    color: coral;
-}
