@@ -116,9 +116,10 @@ $(document).ready(function(){
 
     $(gnb_a).click(function(event){
         event.preventDefault();
+        let hash = $(this).attr('href');
+        let pos = $(hash).offset().top-100;
         $('html, body').animate({
-            scroolTop: $(this.hash).stop().offset().top -100
+            scrollTop: pos
         },1000);
-        console.log(gnb_a);
     })
 });
