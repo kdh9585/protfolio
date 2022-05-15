@@ -1,5 +1,5 @@
 window.onload = function () {
-    const content = "안녕하세요:) \n 프론트엔드 개발자 강동휘 입니다.";
+    const content = "안녕하세요:) \n 프론트엔드 개발자 \n 강동휘 입니다.";
     const text = document.querySelector(".text");
     let i = 0;
 
@@ -11,14 +11,10 @@ window.onload = function () {
             i = 0;
         }
     }
-    setInterval(typing, 200)
-
-    
-
-
+    setInterval(typing, 150)
 };
 // progress Bar
-$(document).ready(function(){
+$(document).ready(function () {
     let bar1 = new ProgressBar.Circle(circle1, {
         strokeWidth: 6,
         easing: 'easeInOut',
@@ -91,6 +87,24 @@ $(document).ready(function(){
         trailWidth: 1,
         svgStyle: null
     });
+    let bar9 = new ProgressBar.Circle(circle9, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#f57c2c',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
+    let bar10 = new ProgressBar.Circle(circle10, {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: '#cc6699',
+        trailColor: '#eee',
+        trailWidth: 1,
+        svgStyle: null
+    });
 
     bar1.animate(.9); // Number from 0.0 to 1.0
     bar2.animate(.85); // Number from 0.0 to 1.0
@@ -100,26 +114,67 @@ $(document).ready(function(){
     bar6.animate(.6); // Number from 0.0 to 1.0
     bar7.animate(.6); // Number from 0.0 to 1.0
     bar8.animate(.9); // Number from 0.0 to 1.0
+    bar9.animate(.9); // Number from 0.0 to 1.0
+    bar10.animate(.9); // Number from 0.0 to 1.0
 
     // swiper
-
     let swiper = new Swiper(".mySwiper", {
         slidesPerView: 3,
         pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+            el: ".swiper-pagination",
+            clickable: true,
         },
     });
-
+    // 메뉴클릭 이동
     let gnb_a = $('.gnb a');
-    
 
-    $(gnb_a).click(function(event){
+    $(gnb_a).click(function (event) {
         event.preventDefault();
         let hash = $(this).attr('href');
-        let pos = $(hash).offset().top-100;
+        let pos = $(hash).offset().top - 100;
         $('html, body').animate({
             scrollTop: pos
-        },1000);
+        }, 1000);
     })
+    // chart.js
+    const red = "rgb(255, 99, 132)";
+    const color = Chart.helpers.color;
+    const config = {
+        type: 'radar',
+        data: {
+            labels: [
+                ['Eating', 'Dinner'],
+                ['Drinking', 'Water'], 'Sleeping', ['Designing', 'Graphics'], 'Coding', 'Cycling', 'Running'
+            ],
+            datasets: [{
+                label: 'My dataset',
+                backgroundColor: color(red).alpha(0.2).rgbString(),
+                borderColor: red,
+                pointBackgroundColor: red,
+                data: [
+                    80,
+                    90,
+                    60,
+                    65,
+                    78,
+                    97,
+                    55
+                ]
+            }]
+        },
+        options: {
+            scale: {
+                gridLines: {
+                    circular: true
+                },
+                ticks: {
+                    beginAtZero: true
+                },
+            }
+        }
+    };
+
+    window.onload = function () {
+        window.myRadar = new Chart(document.getElementById('chart'), config);
+    };
 });

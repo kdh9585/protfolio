@@ -30,7 +30,11 @@
     <!-- swiper -->
     <link rel="stylesheet" href="js/swiper/swiper.css">
     <script src="js/swiper/swiper.min.js"></script>
-
+    <!-- chart js -->
+    <script src="js/chart/chart.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
@@ -49,27 +53,27 @@
                     <ul class="gnb">
                         <li><a href="#home">home</a></li>
                         <li><a href="#kang">kang</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#about">about</a></li>
                         <li><a href="#skill">skill</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#about">possibility</a></li>
                         <li><a href="#life">life</a></li>
                     </ul>
                 </nav>
-                <input class="burger-check" type="checkbox" id="burger-check" /><label class="burger-icon"
+                <!-- 햄버거 -->
+                <!-- <input class="burger-check" type="checkbox" id="burger-check" /><label class="burger-icon"
                     for="burger-check"><span class="burger-sticks"></span></label>
                 <div class="menu">
                     <div style="width: 200px;">
                         <ul class="gnb">
                             <li><a href="#">home</a></li>
                             <li><a href="#">kang</a></li>
-                            <li><a href="#">about</a></li>
                             <li><a href="#">skill</a></li>
+                            <li><a href="#">possibility</a></li>
                             <li><a href="#">life</a></li>
                             <li><a href="#">portfolio</a></li>
                         </ul>
                     </div>
-                </div>
-
+                </div> -->
             </div>
         </header>
         <!-- 메인영역 -->
@@ -98,7 +102,6 @@
                             <img src="images/address_logo.png" alt="이미지">
                         </a>
                     </div>
-
                 </div>
             </section>
             <!-- about me -->
@@ -133,12 +136,15 @@
                             Kang Dong Hwik
                         </div>
                         <div class="kang-txt">
-                            <p>안녕하세요:) 새로운 것을
+                            <span class="txt-hello">안녕하세요:) <br>
+                                새로운 것을
                                 두려워하지 않고
                                 끊임없이 탐구하며 발전하는
-                                프론트엔드 개발자 강동휘입니다.<br>
-                                더 나은 결과물이 나올 수 있도록
-                                끊임없이 고민하고 
+                                프론트엔드 개발자 강동휘입니다.</span>
+                                <br>
+                            <br>
+                            <p>더 나은 결과물이 나올 수 있도록
+                                끊임없이 고민하고
                                 어려운 일이 있어도
                                 현실에 안주하지 않습니다.<br>
                                 계속되는 도전 속에서 오는 수많은 위기와
@@ -201,15 +207,49 @@
                                 </span>
                                 <h3>
                                     시쓰기<br>
-                                    관련계정&puncsp; <a href="https://www.instagram.com/_xanax_emotion/" target="_blank"><i class="fas fa-pen"></i></a><br>
+                                    관련계정&puncsp; <a href="https://www.instagram.com/_xanax_emotion/" target="_blank"><i
+                                            class="fas fa-pen"></i></a><br>
                                     <br>
                                     유튜브 촬영<br>
-                                    관련계정&puncsp;&puncsp;<a href="https://www.youtube.com/watch?v=b79flA0HotA&list=PLTuuo0G7FZW2OefSHQYBlrTvX6Bx13uuL&index=27" target="_blank"><i class="fab fa-youtube"></i></a><br>
+                                    관련계정&puncsp;&puncsp;<a
+                                        href="https://www.youtube.com/watch?v=b79flA0HotA&list=PLTuuo0G7FZW2OefSHQYBlrTvX6Bx13uuL&index=27"
+                                        target="_blank"><i class="fab fa-youtube"></i></a><br>
                                     <br>
                                 </h3>
                             </div>
                         </div>
                     </div>
+            </section>
+            <!-- skill -->
+            <section class="skill" id="skill">
+                <div class="container">
+                    <div class="section-box skill-head">
+                        <h2 class="">skills</h2>
+                    </div>
+                    <div class="skill-box">
+                        <div id="circle1"></div>
+                        <div id="circle2"></div>
+                        <div id="circle3"></div>
+                        <div id="circle4"></div>
+                        <div id="circle5"></div>
+                        <div id="circle6"></div>
+                        <div id="circle7"></div>
+                        <div id="circle8"></div>
+                        <div id="circle9"></div>
+                        <div id="circle10"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- ps -->
+            <section class="possibility">
+                <div class="container">
+                    <div class="section-box">
+                        <h2>possibility</h2>
+                    </div>
+                    <div class="chart">
+                        <canvas id="chart"></canvas>
+                    </div>
+                </div>
             </section>
             <!-- portfolio -->
             <section class="portfolio" id="portfolio">
@@ -264,7 +304,7 @@
                                     <i class="fas fa-clone"></i>clone
                                 </a>
                                 <a href="#">
-                                    <i class="fas fa-calendar-check"></i>4일
+                                    <i class="fas fa-calendar-check"></i>2일
                                 </a>
                             </div>
                         </div>
@@ -290,7 +330,7 @@
                                     <i class="fas fa-clone"></i>clone
                                 </a>
                                 <a href="#">
-                                    <i class="fas fa-calendar-check"></i>2일
+                                    <i class="fas fa-calendar-check"></i>3일
                                 </a>
                             </div>
                         </div>
@@ -316,7 +356,7 @@
                                     <i class="fas fa-clone"></i>clone
                                 </a>
                                 <a href="#">
-                                    <i class="fas fa-calendar-check"></i>2일
+                                    <i class="fas fa-calendar-check"></i>4일
                                 </a>
                             </div>
                         </div>
@@ -342,7 +382,7 @@
                                     <i class="fas fa-clone"></i>clone
                                 </a>
                                 <a href="#">
-                                    <i class="fas fa-calendar-check"></i>2일
+                                    <i class="fas fa-calendar-check"></i>11일
                                 </a>
                             </div>
                         </div>
@@ -355,7 +395,7 @@
                             <button class="pt-work">Website</button>
                             <h3>부산대학교병원</h3>
                             <span>부산대학교병원 웹사이트 클론코딩</span>
-                            <div class="pt-bottom">
+                            <div class="pt.-bottom">
                                 <a href="#">
                                     <i class="fab fa-github"></i>Github
                                 </a>
@@ -368,7 +408,7 @@
                                     <i class="fas fa-clone"></i>clone
                                 </a>
                                 <a href="#">
-                                    <i class="fas fa-calendar-check"></i>2일
+                                    <i class="fas fa-calendar-check"></i>9일
                                 </a>
                             </div>
                         </div>
@@ -379,8 +419,8 @@
                         </div>
                         <div class="pt-cate">
                             <button class="pt-work">Website</button>
-                            <h3>산청군</h3>
-                            <span>산청군 웹사이트 클론코딩</span>
+                            <h3>산청군청</h3>
+                            <span>산청군청 웹사이트 클론코딩</span>
                             <div class="pt-bottom">
                                 <a href="#">
                                     <i class="fab fa-github"></i>Github
@@ -394,61 +434,13 @@
                                     <i class="fas fa-clone"></i>clone
                                 </a>
                                 <a href="#">
-                                    <i class="fas fa-calendar-check"></i>2일
+                                    <i class="fas fa-calendar-check"></i>12일
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- about -->
-            <section class="about" id="about">
-                <div class="container">
-                    <div class="section-box">
-                        <h2>about me</h2>
-                    </div>
-                    <span>
-                        안녕하세요:) 새로운 것을 두려워하지 않고 끊임없이 탐구하며 발전하는<br>
-                        프론트엔드 개발자 강동휘입니다.<br>
-                        저는 사용성 있는 웹 페이지를 만들기 위해 노력하고 있습니다.<br>
-                        더 나은 결과물이 나올 수 있도록 끊임없이 고민하고 어려운 일이 있어도<br>
-                        현실에 안주하지 않고 계속되는 도전 속에서 오는 수많은 위기와<br>
-                        어려움을 포기하지 않고 최선을 다해 발전하는<br>
-                        프론트엔드 개발자가 되겠습니다.
-                    </span>
-                    <div class="about-images">
-
-                    </div>
-                    <div class="speech-bubble">
-
-                    </div>
-                    <button class="about-button">
-                        Hire Me
-                    </button>
-                </div>
-            </section>
-
-            <!-- skill -->
-            <section class="skill" id="skill">
-                <div class="container">
-                    <div class="section-box">
-                        <h2>Skills</h2>
-                    </div>
-                    <div class="skill-box">
-                        <div id="circle8"></div>
-                        <div id="circle1"></div>
-                        <div id="circle2"></div>
-                        <div id="circle3"></div>
-                        <div id="circle4"></div>
-                        <div id="circle5"></div>
-                        <div id="circle6"></div>
-                        <div id="circle7"></div>
-                    </div>
-                </div>
-            </section>
-
-
-
             <!-- life -->
             <section class="life" id="life">
                 <div class="container">
@@ -499,14 +491,9 @@
                         </div>
                     </div>
                 </div>
-
             </section>
-            
-
-
         </div>
         <!-- 하단 contact -->
-
     </div>
 </body>
 
