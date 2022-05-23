@@ -144,7 +144,7 @@ $(document).ready(function () {
         data: {
             labels: [
                 ['#소통능력'],
-                ['#팀워크'], '#창의성', ['#도전정신'], '#열정과 적극성', '#실무역량'
+                ['#팀워크'],  ['#도전정신'], '#열정과 적극성', '#실무역량'
             ],
             datasets: [{
                 label: 'My dataset',
@@ -154,7 +154,6 @@ $(document).ready(function () {
                 data: [
                     95,
                     95,
-                    90,
                     80,
                     90,
                     97
@@ -176,13 +175,14 @@ $(document).ready(function () {
                     suggestedMax: 100,
                     stepSize: 5,
                     maxTicksLimit: 5,
-                    display: true
-                },
+                    display: true,
+                    beginAtZero: true
+                }
             }
         }
     };
 
     window.onload = function () {
-        window.myRadar = new Chart(document.getElementById('chart'), config);
+        window.myRadar = new Chart(document.getElementById('chart').getContext('2d'), config);
     };
 });
