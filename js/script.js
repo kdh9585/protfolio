@@ -131,20 +131,20 @@ $(document).ready(function () {
     $(gnb_a).click(function (event) {
         event.preventDefault();
         let hash = $(this).attr('href');
-        let pos = $(hash).offset().top - 100;
+        let pos = $(hash).offset().top + 100;
         $('html, body').animate({
             scrollTop: pos
         }, 1000);
     })
     // chart.js
-    const red = "rgb(255, 99, 132)";
+    const red = "rgb(39, 43, 48)";
     const color = Chart.helpers.color;
     const config = {
         type: 'radar',
         data: {
             labels: [
-                ['Eating', 'Dinner'],
-                ['Drinking', 'Water'], 'Sleeping', ['Designing', 'Graphics'], 'Coding', 'Cycling', 'Running'
+                ['#소통능력'],
+                ['#팀워크'], '#창의성', ['#도전정신'], '#열정과 적극성', '#실무역량'
             ],
             datasets: [{
                 label: 'My dataset',
@@ -152,23 +152,31 @@ $(document).ready(function () {
                 borderColor: red,
                 pointBackgroundColor: red,
                 data: [
+                    95,
+                    95,
+                    90,
                     80,
                     90,
-                    60,
-                    65,
-                    78,
-                    97,
-                    55
+                    97
                 ]
             }]
         },
         options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
             scale: {
                 gridLines: {
                     circular: true
                 },
                 ticks: {
-                    beginAtZero: true
+                    suggestedMin: 0,
+                    suggestedMax: 100,
+                    stepSize: 5,
+                    maxTicksLimit: 5,
+                    display: true
                 },
             }
         }
