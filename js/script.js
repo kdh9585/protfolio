@@ -1,4 +1,7 @@
 window.onload = function () {
+    //AOS
+    AOS.init();
+    // typing 효과
     const content = "안녕하세요:) \n 프론트엔드 개발자 \n 강동휘 입니다.";
     const text = document.querySelector(".text");
     let i = 0;
@@ -12,7 +15,15 @@ window.onload = function () {
         }
     }
     setInterval(typing, 150)
+    // 위로가기
+    let gotop = $('#top');
+    gotop.click(function () {
+        $('html').animate({
+            scrollTop: 0
+        }, 200);
+    });
 };
+
 // progress Bar
 $(document).ready(function () {
     let bar1 = new ProgressBar.Circle(circle1, {
@@ -178,4 +189,5 @@ $(document).ready(function () {
     });
 
     };
+    
 });
