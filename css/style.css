@@ -601,7 +601,7 @@ body {
     height: 450px;
     border: 5px  solid #eee;
     border-radius: 15px;
-    margin-top: 50px;
+    margin-top: 80px;
     padding-top: 40px;
     padding-left: 40px;
 }
@@ -615,11 +615,11 @@ body {
 }
 .chart{
     position: absolute;
-    top: 230px;
+    top: 200px;
     right: 0px;
     display: block;
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
 }
 
 /* portfolio */

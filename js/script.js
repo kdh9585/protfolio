@@ -136,28 +136,24 @@ $(document).ready(function () {
             scrollTop: pos
         }, 1000);
     })
-    // chart.js
-    const red = "rgb(39, 43, 48)";
-    const color = Chart.helpers.color;
-    const config = {
+    
+    window.onload = function () {
+        // chart.js
+    const ctx = document.getElementById('chart').getContext('2d');
+    const myChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: [
-                ['#소통능력'],
-                ['#팀워크'],  ['#도전정신'], '#열정과 적극성', '#실무역량'
-            ],
+            labels: ['#소통능력', '#창의성', '#도전정신', '#열정과 적극정', '#실무역량'],
             datasets: [{
-                label: 'My dataset',
-                backgroundColor: color(red).alpha(0.2).rgbString(),
-                borderColor: red,
-                pointBackgroundColor: red,
-                data: [
-                    95,
-                    95,
-                    80,
-                    90,
-                    97
-                ]
+                label: 'possibility',
+                data: [90, 95, 90, 80, 80],
+                backgroundColor: [
+                    'rgba(0, 0, 0, 0.3)',
+                ],
+                borderColor: [
+                    'rgba(0, 0, 0, 1)',
+                ],
+                borderWidth: 2
             }]
         },
         options: {
@@ -166,23 +162,20 @@ $(document).ready(function () {
                     display: false
                 }
             },
-            scale: {
-                gridLines: {
-                    circular: true
-                },
-                ticks: {
-                    suggestedMin: 0,
-                    suggestedMax: 100,
-                    stepSize: 5,
-                    maxTicksLimit: 5,
-                    display: true,
-                    beginAtZero: true
+            scales: {
+                r: {
+                    beginAtZero: true,
                 }
+            },
+            ticks: {
+                suggestedMin: 0,
+                suggestedMax: 100,
+                stepSize: 5,
+                maxTicksLimit: 10,
+                display: false
             }
         }
-    };
+    });
 
-    window.onload = function () {
-        window.myRadar = new Chart(document.getElementById('chart').getContext('2d'), config);
     };
 });
