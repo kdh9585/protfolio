@@ -904,7 +904,7 @@ body {
     color: #fff;
 }
 .fa-comment{
-    color: yellow;
+    color: rgba(255, 255, 0, 0.623);
 }
 .f-copy{
     position: relative;
