@@ -1,6 +1,8 @@
 window.onload = function () {
     //AOS
-    AOS.init();
+    AOS.init({
+        once:true
+    });
     // typing 효과
     const content = "안녕하세요:) \n 프론트엔드 개발자 \n 강동휘 입니다.";
     const text = document.querySelector(".text");
@@ -21,6 +23,45 @@ window.onload = function () {
         $('html').animate({
             scrollTop: 0
         }, 200);
+    });
+
+    // chart.js
+    const ctx = document.getElementById('chart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['#소통능력', '#창의성', '#도전정신', '#열정과 적극정', '#실무역량'],
+            datasets: [{
+                label: 'possibility',
+                data: [90, 95, 90, 80, 80],
+                backgroundColor: [
+                    'rgba(0, 0, 0, 0.3)',
+                ],
+                borderColor: [
+                    'rgba(0, 0, 0, 1)',
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                r: {
+                    beginAtZero: true,
+                }
+            },
+            ticks: {
+                suggestedMin: 0,
+                suggestedMax: 100,
+                stepSize: 5,
+                maxTicksLimit: 10,
+                display: false
+            }
+        }
     });
 };
 
@@ -142,52 +183,12 @@ $(document).ready(function () {
     $(gnb_a).click(function (event) {
         event.preventDefault();
         let hash = $(this).attr('href');
-        let pos = $(hash).offset().top + 100;
+        let pos = $(hash).offset().top - 50;
         $('html, body').animate({
             scrollTop: pos
         }, 1000);
     })
-    
-    window.onload = function () {
-        // chart.js
-    const ctx = document.getElementById('chart').getContext('2d');
-    const myChart = new Chart(ctx, {
-        type: 'radar',
-        data: {
-            labels: ['#소통능력', '#창의성', '#도전정신', '#열정과 적극정', '#실무역량'],
-            datasets: [{
-                label: 'possibility',
-                data: [90, 95, 90, 80, 80],
-                backgroundColor: [
-                    'rgba(0, 0, 0, 0.3)',
-                ],
-                borderColor: [
-                    'rgba(0, 0, 0, 1)',
-                ],
-                borderWidth: 2
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    display: false
-                }
-            },
-            scales: {
-                r: {
-                    beginAtZero: true,
-                }
-            },
-            ticks: {
-                suggestedMin: 0,
-                suggestedMax: 100,
-                stepSize: 5,
-                maxTicksLimit: 10,
-                display: false
-            }
-        }
-    });
 
-    };
-    
+
+
 });
