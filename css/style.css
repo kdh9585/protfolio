@@ -737,7 +737,16 @@ body {
     margin-left: 15px;
     padding: 5px;
 }
-
+.pt-work3{
+    position: relative;
+    display: inline-block;
+    background-color: green;
+    color: #eee;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 5px;
+}
 .pt-cate>h3 {
     position: relative;
     display: block;
