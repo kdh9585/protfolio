@@ -1,7 +1,7 @@
 window.onload = function () {
     //AOS
     AOS.init({
-        once:true
+        // once:true
     });
     // typing 효과
     const content = "안녕하세요:) \n 프론트엔드 개발자 \n 강동휘 입니다.";
