@@ -4,7 +4,7 @@ window.onload = function () {
         // once:true
     });
     // typing 효과
-    const content = "안녕하세요:) \n 프론트엔드 개발자 \n 강동휘 입니다.";
+    const content = "안녕하세요:) \n  프론트엔드 개발자 \n 강동휘 입니다.";
     const text = document.querySelector(".text");
     let i = 0;
 
@@ -16,13 +16,13 @@ window.onload = function () {
             i = 0;
         }
     }
-    setInterval(typing, 150)
+    setInterval(typing, 200)
     // 위로가기
     let gotop = $('#top');
     gotop.click(function () {
         $('html').animate({
             scrollTop: 0
-        }, 200);
+        }, 180);
     });
 
     // chart.js

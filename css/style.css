@@ -323,7 +323,9 @@ body {
     top: 190px;
     left: 50px;
     font-size: 30px;
+    font-weight: bold;
     z-index: 999;
+    color: #000;
 }
 
 .text2 {
