@@ -788,6 +788,16 @@ body {
     margin-left: 15px;
     padding: 5px;
 }
+.pt-work4{
+    position: relative;
+    display: inline-block;
+    background-color: teal;
+    color: #eee;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding: 5px;
+}
 
 .pt-cate>h3 {
     position: relative;
