@@ -16,7 +16,7 @@ window.onload = function () {
             i = 0;
         }
     }
-    setInterval(typing, 200)
+    setInterval(typing, 150)
     // 위로가기
     let gotop = $('#top');
     gotop.click(function () {
