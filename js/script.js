@@ -22,7 +22,7 @@ window.onload = function () {
     gotop.click(function () {
         $('html').animate({
             scrollTop: 0
-        }, 180);
+        }, 160);
     });
 
     // chart.js
